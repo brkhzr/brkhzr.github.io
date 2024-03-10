@@ -1,6 +1,3 @@
- 
-// JavaScript code
- 
 function arama() {
   let input = document.getElementById('searchbar').value
   input = input.toLowerCase();
