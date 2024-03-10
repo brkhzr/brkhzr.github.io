@@ -166,3 +166,17 @@
     width: 32px;
     height: 32px;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#searchbar {
+    margin: 10px;
+    background: #c797eb;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    box-sizing: border-box;
+}
