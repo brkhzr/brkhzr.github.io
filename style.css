@@ -166,3 +166,11 @@
 ::-webkit-scrollbar-track {
   background: #474747;
 }
+.ornek{
+  margin:auto;
+  }
+  .sola-kaydir{
+    display: flex;
+  float:left;
+  padding:0 10px 10px 0;
+  }
