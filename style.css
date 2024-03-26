@@ -5,27 +5,6 @@
         background-color: rgb(20, 16, 25);
       }
       
-.custom-btn {
-  width: 100%;
-  height: 45px;
-  color: #fff;
-  border-radius: 5px;
-  padding: 10px 25px;
-  font-family: 'San Francisco';
-  font-weight: 500;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: block;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-  outline: none;
-}
-
-
-
 .btn-8 {
   background-color: #f0ecfc;
   background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
@@ -33,6 +12,25 @@
   padding: 0;
   margin: 14px 0;
   border: none;
+	background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 30px;
+	padding: 10px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	overflow: hidden;
+	color: #fff;
+	font-weight: 400px;
+	z-index: 1;
+	transition: 0.5s;
+	backdrop-filter: blur(15px);
+  padding: 10px 25px;
+  width: 100%;
+  height: 45px;
+  font-family:  "San Francisco";
+  font-size: medium;
 }
 .btn-8 span {
   position: relative;
@@ -42,117 +40,47 @@
 }
 .btn-8 span a{
   text-decoration: none;
-  color: black;
+  color: #fff;
 }
 .btn-8:before,
 .btn-8:after {
-  position: absolute;
-  content: "";
-  right: 0;
-  bottom: 0;
-  background: #c797eb;
-  /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.5),
-    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
-  transition: all 0.3s ease;
-}
-.btn-8:before{
-   height: 0%;
-   width: 2px;
-}
-.btn-8:after {
-  width: 0%;
-  height: 2px;
-}
-.btn-8:hover:before {
-  height: 100%;
-}
-.btn-8:hover:after {
-  width: 100%;
+	content: "";
+	left: 50%;
+	transform: translatex(-50%);
+	top: -5px;
+	width: 30px;
+	height: 10px;
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0.5;
 }
 .btn-8:hover{
   background: transparent;
 }
-.btn-8 span:hover{
-  color: #c797eb;
-}
-.btn-8 span:before,
-.btn-8 span:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  background: #c797eb;
-  /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.5),
-    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
-  transition: all 0.3s ease;
-}
-.btn-8 span:before {
-  width: 2px;
-  height: 0%;
-}
-.btn-8 span:after {
-  height: 2px;
-  width: 0%;
-}
-.btn-8 span:hover:before {
-  height: 100%;
-}
-.btn-8 span:hover:after {
-  width: 100%;
-}
-/*     Social Icons    */  
-.sociaicon{
-  display: flex;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-.socialsanimate{
-  transition: transform 0s cubic-bezier(0.23, 1, 0.32, 1) 0s;
-  z-index: 0;
-}
-
-.socialsalign{
-  padding-left: 22px;
-  padding-right: 22px;
-  color: inherit;
-  text-decoration: underline;
-}
-.socialsanimate svg {
-    pointer-events: none;
-}
-.socialssvg{
-    margin-top: 8px;
-    fill: rgb(255, 254, 254);
-    width: 32px;
-    height: 32px;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 #searchbar {
     margin: 10px;
     background: linear-gradient(92.88deg, #a400d6 9.16%, #a400d6 43.89%, #FF06B7 64.72%);
     font-family: "San Francisco";
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 30px;
     width: 50%;
-    box-sizing: border-box;
+    border: none;
+    overflow: hidden;
+    backdrop-filter: blur(15px);
 }
 #searchbar:hover {
-  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  box-shadow: #a400d6 0 1px 30px;
   transition-duration: .1s;
+}
+#searchbar span a{
+  text-decoration: none;
+  color: #fff;
+}
+::-webkit-input-placeholder {
+  color: #fff;
+}
+::-moz-placeholder {
+  color: #fff;  
 }
 ::-webkit-scrollbar {
   width: 20px;
@@ -171,21 +99,27 @@
 ::-webkit-scrollbar-track {
   background: #474747;
 }
+::-moz-scrollbar {
+  width: 20px;
+  height: 20px;
+}
+
+::-moz-scrollbar-thumb {
+  background: linear-gradient(
+  to bottom,
+  #a400d6,
+  #FF06B7);
+
+  border-radius: 50px;
+}
+
+::-moz-scrollbar-track {
+  background: #474747;
+}
 .ornek{
   margin:auto;
   }
   .sola-kaydir{
   float:left;
   padding:0 10px 10px 0;
-  }
-  .button-36 {
-    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
-    font-family: "San Francisco";
-    font-size: 16px;
-    font-weight: 500;
-  }
-  
-  .button-36:hover {
-    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
-    transition-duration: .1s;
   }
